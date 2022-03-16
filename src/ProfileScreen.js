@@ -6,12 +6,13 @@ const ProfileScreen = ({ route, navigation }) => {
     params: { id },
   } = route;
   return (
-    <View style={{ alignItems: "center", justifyContent: "center" }}>
-      {id != 1 && <Text style={styles.attributeTitle}>Deeplink id = {id}</Text>}
+    <View style={{ flex:1, alignItems: "center", justifyContent: "center" }}>
+    {id != 1 && <Text style={styles.attributeTitle}>Deeplink id = {id}</Text>}
+    <Text>{"\n"}</Text>
       <Button
         title="Go to Notifications"
         onPress={() => navigation.navigate("Notifications")}
-      />
+      /><Text>{"\n"}</Text>
       <Button title="Go back" onPress={() => navigation.goBack()} />
     </View>
   );

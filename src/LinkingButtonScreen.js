@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Button, Linking } from "react-native";
+import { View, Button, Linking, Text } from "react-native";
 
 export default function LinkingButtonScreen({ navigation }) {
   const profileUrl = "demo://app/profile/234";
@@ -8,31 +8,31 @@ export default function LinkingButtonScreen({ navigation }) {
   const settingsUrl = "demo://app/settings";
 
   return (
-    <View style={{ alignItems: "center", justifyContent: "center" }}>
+    <View style={{ flex:1, alignItems: "center", justifyContent: "center" }}>
       <Button
         title="Deeplink to Profile"
         onPress={() => {
           Linking.openURL(profileUrl);
         }}
-      />
+      /><Text>{"\n"}</Text>
       <Button
         title="Deeplink to Notiofications"
         onPress={() => {
           Linking.openURL(notioficationsUrl);
         }}
-      />
+      /><Text>{"\n"}</Text>
       <Button
         title="Deeplink to Home"
         onPress={() => {
           Linking.openURL(homeUrl);
         }}
-      />
+      /><Text>{"\n"}</Text>
       <Button
         title="Deeplink to Setting"
         onPress={() => {
           Linking.openURL(settingsUrl);
         }}
-      />
+      /><Text>{"\n"}</Text>
 
       <Button
         title="Open public Url"

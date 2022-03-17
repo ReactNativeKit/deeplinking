@@ -3,7 +3,7 @@ import { View, Button, Linking, Text } from "react-native";
 
 export default function LinkingButtonScreen({ navigation }) {
   const profileUrl = "demo://app/profile/234";
-  const notioficationsUrl = "demo://app/notifications";
+  const notificationsUrl = "demo://app/notifications";
   const homeUrl = "demo://app/home/123";
   const settingsUrl = "demo://app/settings";
 
@@ -16,9 +16,9 @@ export default function LinkingButtonScreen({ navigation }) {
         }}
       /><Text>{"\n"}</Text>
       <Button
-        title="Deeplink to Notiofications"
+        title="Deeplink to Notifications"
         onPress={() => {
-          Linking.openURL(notioficationsUrl);
+          Linking.openURL(notificationsUrl);
         }}
       /><Text>{"\n"}</Text>
       <Button

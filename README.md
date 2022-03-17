@@ -41,8 +41,8 @@
   
 ### ``` Installation Process ```
 
-### ``` 1. Download or clone the Repository. ```
-### ``` 2. npm install / yarn add install ```
-### ``` 3. npx react-native start ```
-### ``` 4. npx react-native run-android ```
-### ``` 5. npx uri-scheme open demo://app/profile/102 --android ```
+### 1. ``` Download or clone the Repository. ```
+### 2. ``` npm install / yarn add install ```
+### 3. ``` npx react-native start ```
+### 4. ``` npx react-native run-android ```
+### 5. ``` npx uri-scheme open demo://app/profile/102 --android ```
